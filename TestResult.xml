@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" name="PlaywrightFramework.dll" fullname="D:\Playwright\Playwrightdotnet\PlaywrightDemo\PlaywrightFramework\bin\Debug\net8.0\PlaywrightFramework.dll" testcasecount="1" result="Failed" start-time="2024-11-08T12:30:23.9365538Z" end-time="2024-11-08T12:30:24.3511195Z" duration="0.414538" total="1" passed="0" failed="1" inconclusive="0" skipped="0" warnings="0" asserts="0" random-seed="165887012">
+  <command-line><![CDATA[D:\Playwright\Playwrightdotnet\PlaywrightDemo\PlaywrightFramework\bin\Debug\net8.0\PlaywrightFramework.dll]]></command-line>
+  <filter />
+  <test-suite type="Assembly" id="1002" name="PlaywrightFramework.dll" fullname="D:\Playwright\Playwrightdotnet\PlaywrightDemo\PlaywrightFramework\bin\Debug\net8.0\PlaywrightFramework.dll" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2024-11-08T12:30:23.9365538Z" end-time="2024-11-08T12:30:24.3511195Z" duration="0.414538" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="4.2.2.0" clr-version="8.0.10" os-version="Microsoft Windows 10.0.22621" platform="Win32NT" cwd="D:\Playwright\Playwrightdotnet\PlaywrightDemo\PlaywrightFramework" machine-name="INHL1273" user="VanshdeepK" user-domain="INTERRAIT" culture="en-IN" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="WorkDirectory" value="D:\Playwright\Playwrightdotnet\PlaywrightDemo\PlaywrightFramework" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="19988" />
+      <property name="_APPDOMAIN" value="PlaywrightFramework" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1003" name="PlaywrightFramework" fullname="PlaywrightFramework" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2024-11-08T12:30:23.9414164Z" end-time="2024-11-08T12:30:24.3511106Z" duration="0.409694" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1004" name="Tests" fullname="PlaywrightFramework.Tests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2024-11-08T12:30:23.9417162Z" end-time="2024-11-08T12:30:24.3510816Z" duration="0.409365" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1000" name="AddTeamMemberTests" fullname="PlaywrightFramework.Tests.AddTeamMemberTests" classname="PlaywrightFramework.Tests.AddTeamMemberTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2024-11-08T12:30:23.9427193Z" end-time="2024-11-08T12:30:24.3507130Z" duration="0.407994" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1001" name="Add_Team_Member" fullname="PlaywrightFramework.Tests.AddTeamMemberTests.Add_Team_Member" methodname="Add_Team_Member" classname="PlaywrightFramework.Tests.AddTeamMemberTests" runstate="Runnable" seed="2008240401" result="Failed" label="Error" start-time="2024-11-08T12:30:23.9460475Z" end-time="2024-11-08T12:30:24.3480737Z" duration="0.402085" asserts="0">
+            <failure>
+              <message><![CDATA[System.TypeInitializationException : The type initializer for 'PlaywrightFramework.GlobalAppSettings' threw an exception.
+  ----> System.ArgumentNullException : File name cannot be null or empty. (Parameter 'fileName')]]></message>
+              <stack-trace><![CDATA[   at PlaywrightFramework.GlobalAppSettings.GetCsvFilePath() in D:\Playwright\Playwrightdotnet\PlaywrightDemo\PlaywrightFramework\Utilities\AppSettings.cs:line 103
+   at PlaywrightFramework.Tests.AddTeamMemberTests.Add_Team_Member() in D:\Playwright\Playwrightdotnet\PlaywrightDemo\PlaywrightFramework\Tests\AddTeamMembersTests.cs:line 32
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Execution.SimpleWorkItem.<>c__DisplayClass3_0.<PerformWork>b__0()
+   at NUnit.Framework.Internal.ContextUtils.<>c__DisplayClass1_0`1.<DoIsolated>b__0(Object _)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at NUnit.Framework.Internal.ContextUtils.DoIsolated(ContextCallback callback, Object state)
+   at NUnit.Framework.Internal.ContextUtils.DoIsolated[T](Func`1 func)
+   at NUnit.Framework.Internal.Execution.SimpleWorkItem.PerformWork()
+--ArgumentNullException
+   at PlaywrightFramework.GlobalAppSettings..cctor() in D:\Playwright\Playwrightdotnet\PlaywrightDemo\PlaywrightFramework\Utilities\AppSettings.cs:line 35]]></stack-trace>
+            </failure>
+            <output><![CDATA[Base Path: D:\Playwright\Playwrightdotnet\PlaywrightDemo\PlaywrightFramework\bin\Debug\net8.0\
+File Name: 
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
